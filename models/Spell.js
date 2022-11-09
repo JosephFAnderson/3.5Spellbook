@@ -51,7 +51,6 @@ const spellSchema = new Schema({
     ],
     components: {
         type: String,
-        required: true
     },
     castingTime: {
         type: String,
@@ -63,11 +62,10 @@ const spellSchema = new Schema({
     },
     effectType: {
         type: String,
-        required: true
+        default: "none"
     },
     effect: {
         type: String,
-        required: true
     },
     duration: {
         type: String,
